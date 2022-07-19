@@ -1,0 +1,299 @@
+
+.green{
+  color: #84b736;
+}
+.navbar .container .dropdown .dropdown-toggle{
+  background: transparent;
+  border: none;
+  text-transform: uppercase; 
+  color: #fff;
+}
+.navbar .container .text li{
+  border-right: 1px solid #fff;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.navbar .container .text li:last-child
+{
+  padding-left: 15px;
+  margin: 0px;
+  font-size: 15px;
+  border-right: none;
+
+}
+.navbar .container .icons li:nth-child(7),
+.navbar .container .icons li:nth-child(8),
+.navbar .container .icons li:nth-child(9),
+.navbar .container .icons li:nth-child(10){
+  border-right: 1px solid #fff;
+
+}
+
+.navbar .container .icons li{
+  padding: 0px 5px;
+}
+.colors span{
+  display: inline-block;
+  text-align: left;
+  width: 20px; 
+  height: 20px;
+  border-radius: 15px 4px 15px 15px;
+}
+.colors span:hover{
+  cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------
+# Our Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #334240;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #1bbca3;
+}
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(88, 113, 109, 0.6);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+}
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #56e7d0;
+}
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 48px);
+}
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: calc(50% - 50px);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #1bbca3;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #1bbca3;
+}
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(88, 113, 109, 0.08);
+}
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.greenslider{
+  margin: 50px auto;
+  height: 500px;
+  background-image: url('../imgs/slider/background.svg');
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 30%;
+  padding: 200px 0px;
+}
+
+.greenslider .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #579709bb;
+}
+.carousel-inner .secondslider img{
+  width: 49%;
+}
+.carousel-inner .secondslider >div{
+  width: 49%;
+  float: right;
+  color: rgb(230, 230, 230);
+}
+.data >p{
+  margin: 100px 0px 20px 0px;
+}
+.data >h2{
+  padding: 20px 0px;
+}
+.data .spans span{
+  width: 32.333%;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.data >h3{
+  display: inline-block;
+  margin: 0px 50px 0px 0px;
+}
+.data > button{
+  color: rgb(230, 230, 230);
+  border-color: rgb(230, 230, 230);
+  margin-bottom: 5px;
+  padding: 10px 25px;
+  letter-spacing: 1.5px;
+}
+
+.chairebackground{
+  background-image: url('../imgs/sections/about-us.jpg');
+  background-size: cover;
+  height: 400px;
+}
+.chairebackground div p{
+  margin: 20px 0px 30px 0px;
+  font-size: 20px;
+}
+.chairebackground div button{
+  padding: 5px 30px;
+  margin: 10px 20px 0px 0px;
+}
+
+.tablesection{
+  background-image: url('../imgs/sections/join-us.jpg');
+  background-repeat: no-repeat;
+  background-position: -40% 20%;
+  background-origin: right;
+}
+.tablesection >div{
+  margin-left: 50px;
+}
+
+.textlink{
+  color:#84b736;
+  text-decoration: none;
+}
+.textlink:hover{
+  color:#66a010;
+}
+.about h3{
+  font-size: 23px;
+}
+.about ul{
+ list-style: none;
+ padding: 0px;
+ margin: 0px;
+}
+.about ul li{
+  margin: 15px 0px;
+  padding-left: 10px;
+}
