@@ -1,4 +1,10 @@
 
+*{
+  text-transform: capitalize;
+}
+input{
+  text-transform: none;
+}
 .green{
   color: #84b736;
 }
@@ -15,22 +21,20 @@
 }
 .navbar .container .text li:last-child
 {
-  padding-left: 15px;
   margin: 0px;
   font-size: 15px;
   border-right: none;
-
 }
 .navbar .container .icons li:nth-child(7),
 .navbar .container .icons li:nth-child(8),
 .navbar .container .icons li:nth-child(9),
 .navbar .container .icons li:nth-child(10){
   border-right: 1px solid #fff;
-
+  margin-right: 10px;
 }
 
 .navbar .container .icons li{
-  padding: 0px 5px;
+  padding: 0px 10px 0px 0px;
 }
 .colors span{
   display: inline-block;
@@ -207,12 +211,12 @@
 
 .greenslider{
   margin: 50px auto;
-  height: 500px;
+  height: 600px;
   background-image: url('../imgs/slider/background.svg');
   background-repeat: no-repeat;
   position: relative;
   background-position: 30%;
-  padding: 200px 0px;
+  padding: 300px 0px;
 }
 
 .greenslider .overlay{
@@ -257,7 +261,7 @@
 .chairebackground{
   background-image: url('../imgs/sections/about-us.jpg');
   background-size: cover;
-  height: 400px;
+  min-height: 400px;
 }
 .chairebackground div p{
   margin: 20px 0px 30px 0px;

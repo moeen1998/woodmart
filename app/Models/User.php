@@ -41,4 +41,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get all of the wishes for the user
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function wishes()
+    {
+        // return $this->hasMany(Comments::class, 'foreign_key', 'local_key');
+        return $this->hasMany(Wish_list::class);
+    }
+    public function comments()
+    {
+        // return $this->hasMany(Comments::class, 'foreign_key', 'local_key');
+        return $this->hasMany(Comments::class);
+    }
+    public function orders()
+    {
+        // return $this->hasMany(Comments::class, 'foreign_key', 'local_key');
+        return $this->hasMany(Order::class);
+    }
 }
